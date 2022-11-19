@@ -7,11 +7,15 @@ Console.WriteLine("Введите число N");
 int N = Convert.ToInt32(Console.ReadLine());
 int EvenNumber = 2;
 
-if(N > 1)
-{
-    while(EvenNumber <= N)
-    {
+if (N > 1) {
+    while (EvenNumber <= N) {
         Console.Write(EvenNumber + " ");
-        EvenNumber = EvenNumber + 2;
+        EvenNumber += 2;
     }
+    Console.WriteLine();
+    /* Alternative
+    for (int i=2; i <= N; i++) {
+        Console.Write(i % 2 == 0 ? i : " ");
+    }
+    */
 }
